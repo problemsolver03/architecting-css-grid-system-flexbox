@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg1: #012a4a;
+  --bg2: #013a63;
+  --bg3: #01497c;
+  --bg4: #014f86;
+  --bg5: #2a6f97;
+  --bg6: #61a5c2;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* remove this if not needed*/
+  color: #fff;
+  background-color: #eef3f5;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* remove this if not needed*/
+}
+.bg1 {
+  background-color: var(--bg1);
+}
+.bg2 {
+  background-color: var(--bg2);
+}
+.bg3 {
+  background-color: var(--bg3);
+}
+.bg4 {
+  background-color: var(--bg4);
+}
+.bg5 {
+  background-color: var(--bg5);
+}
+.bg6 {
+  background-color: var(--bg6);
+}
+.p1 {
+  padding: 4px;
+}
+.p2 {
+  padding: 8px;
+}
+.p3 {
+  padding: 12px;
+}
+.p4 {
+  padding: 16px;
+}
+.p5 {
+  padding: 20px;
+}
+.p6 {
+  padding: 24px;
+}
+.p7 {
+  padding: 28px;
+}
+.p8 {
+  padding: 32px;
+}
+.p9 {
+  padding: 36px;
+}
+.p10 {
+  padding: 40px;
+}
+.txt-center {
+  text-align: center;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-full {
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 24.99%;
+}
+.col-4 {
+  width: 33.32%;
+}
+.col-5 {
+  width: 41.65%;
+}
+.col-6 {
+  width: 49.98%;
+}
+.col-7 {
+  width: 58.31%;
+}
+.col-8 {
+  width: 66.64%;
+}
+.col-9 {
+  width: 74.97%;
+}
+.col-10 {
+  width: 83.3%;
+}
+.col-11 {
+  width: 91.63%;
+}
+.col-12 {
+  width: 100%;
+}
+.h1 {
+  height: 10vh;
+}
+.h2 {
+  height: 20vh;
+}
+.h3 {
+  height: 33.3vh;
+}
+.h4 {
+  height: 50vh;
+}
+.h5 {
+  height: 75vh;
+}
+.h6 {
+  height: 100vh;
+}
+img {
+  width: 100%;
+}
+
+[class*="col"] {
+  position: relative;
+}
+
+[class*="col"] * {
+  z-index: 1;
+  position: relative;
+}
+
+/*example layout styling skip this styles on your projects if neccessary*/
+.layout1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.travelImage {
+  background-image: url(./examples/images/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.travelImage2 {
+  background-image: url(./examples/images/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
