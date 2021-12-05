@@ -1,17 +1,18 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Flexbox Grid</title>
+        <title>Simple | Another css library | Theme example </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="../gridSystem.css" />
+        <link rel="stylesheet" href="../dist/simple.css" />
+        <link rel="stylesheet" href="./layout1.css" />
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body class="layout1">
-          <div class="container">
+          <div class="container-full">
                <nav class="row bg1 p5">                     
-                           <div class="col-6">LOGO</div>
+                           <div class="col-6 txt-white">LOGO</div>
                            <div class="col-6">
                                <div class="row space-around">
                                    <a href="#">Home</a>
@@ -22,16 +23,16 @@
                                </div>
                            </div>                   
                </nav>
-               <section class="row">
-                     <div class="col-7 travelImage  overlay">
+               <section class="row txt-white">
+                     <div class="col-6 travelImage  overlay">
                          <div class="p10">
-                          <h1>Travel is meditation for your soul</h1>
+                          <h1>Life is a journey, not a destination</h1>
                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta rerum ratione nemo, voluptate enim molestiae sint ipsa esse aliquam eos doloribus cum, distinctio veritatis temporibus corporis laborum maxime praesentium.</p>
                           <a href="#">Know more..</a><br/><br/>
                           <small><i>Image copyright <a href="https://pixabay.com/photos/sunrise-boat-rowing-boat-nobody-1014712/">Pixbay</a></i></small>
                         </div>
                      </div>
-                     <div class="col-5 column">
+                     <div class="col-6 column">
                           <div class="">
                                    <div class="col-12  travelImage2 p10 overlay">
                                     <h2>Travel is meditation.</h2>
@@ -39,14 +40,32 @@
                                     <a href="#">Know more..</a><br/><br/>
                                     <small><i>Image copyright <a href="https://pixabay.com/photos/canal-tourism-travel-waterway-6519196/">Pixbay</a></i></small>
                                    </div>
-                                   <div class="col-12  travelImage2 p10 overlay">
+                                   <div class="col-12  bg5 p10 ">
                                     <h2>Travel is meditation.</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta rerum ratione nemo,</p>
                                     <a href="#">Know more..</a><br/><br/>
-                                    <small><i>Image copyright <a href="https://pixabay.com/photos/canal-tourism-travel-waterway-6519196/">Pixbay</a></i></small>
+                                    
                                  </div>
                           </div>
                   </div>
+               </section>
+               <section class="row align-center">
+                <div class="col-6 bg1 txt-white">
+                    <div class="p10">
+                     <h1>Travel is meditation for your soul</h1>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta rerum ratione nemo, voluptate enim molestiae sint ipsa esse aliquam eos doloribus cum, distinctio veritatis temporibus corporis laborum maxime praesentium.</p>
+                     <a href="#" class="txt-black">Know more..</a><br/><br/>
+                     
+                   </div>
+                </div>
+                <div class="col-6 bg6">
+                    <div class="p10">
+                     <h1>To travel is to live</h1>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta rerum ratione nemo, voluptate enim molestiae sint ipsa esse aliquam eos doloribus cum, distinctio veritatis temporibus corporis laborum maxime praesentium.</p>
+                     <a href="#" class="txt-black">Know more..</a><br/><br/>
+                     
+                   </div>
+                </div>
                </section>
           </div>
     </body>
