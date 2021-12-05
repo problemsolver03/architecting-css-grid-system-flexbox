@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/*common styles */
 :root {
   --bg1: #012a4a;
   --bg2: #013a63;
@@ -9,17 +10,20 @@
   --bg4: #014f86;
   --bg5: #2a6f97;
   --bg6: #61a5c2;
+  --bg7: #eef3f5;
 }
 body {
   margin: 0;
   padding: 0;
-  /* remove this if not needed*/
-  background-color: #eef3f5;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
-  /* remove this if not needed*/
 }
+img {
+  width: 100%;
+}
+/*common styles */
+
+/*background styles */
 .bg1 {
   background-color: var(--bg1);
 }
@@ -38,6 +42,11 @@ body {
 .bg6 {
   background-color: var(--bg6);
 }
+.bg7 {
+  background-color: var(--bg7);
+}
+/*background styles */
+/*utility styles */
 .p1 {
   padding: 4px;
 }
@@ -71,6 +80,30 @@ body {
 .txt-center {
   text-align: center;
 }
+.ht1 {
+  height: 10vh;
+}
+.ht2 {
+  height: 20vh;
+}
+.ht3 {
+  height: 33.3vh;
+}
+.ht4 {
+  height: 50vh;
+}
+.ht5 {
+  height: 75vh;
+}
+.ht6 {
+  height: 100vh;
+}
+
+.txt-white {
+  color: #fff;
+}
+/*utility styles */
+/*grid styles*/
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -136,27 +169,6 @@ body {
 .col-12 {
   width: 100%;
 }
-.h1 {
-  height: 10vh;
-}
-.h2 {
-  height: 20vh;
-}
-.h3 {
-  height: 33.3vh;
-}
-.h4 {
-  height: 50vh;
-}
-.h5 {
-  height: 75vh;
-}
-.h6 {
-  height: 100vh;
-}
-img {
-  width: 100%;
-}
 
 [class*="col"] {
   position: relative;
@@ -166,10 +178,7 @@ img {
   z-index: 1;
   position: relative;
 }
-
-.txt-white {
-  color: #fff;
-}
+/*grid styles*/
 
 /* responsive styles */
 
